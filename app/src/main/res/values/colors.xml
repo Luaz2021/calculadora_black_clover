@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Paleta Base del Sistema-->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Grimorio de 5 Hojas (Fondos y Superficies) -->
+    <color name="grimoire_bg">#FF0B0C10</color>
+    <color name="grimoire_screen_bg">#FF07080A</color>
+    <color name="grimoire_border">#FF222633</color>
+    <color name="grimoire_card">#FF13151B</color>
+    <!-- Toros Negros (Dorado y Acentos de Orden) -->
+    <color name="bulls_gold">#FFD4AF37</color>
+    <color name="bulls_gold_dark">#FF8C7320</color>
+    <color name="bulls_gold_glow">#40D4AF37</color>
+    <!-- Antimagia de Asta y Liebe (Carmesí y Funciones de Borrado) -->
+    <color name="anti_crimson">#FFDC2626</color>
+    <color name="anti_crimson_dark">#FF7F1D1D</color>
+    <color name="anti_crimson_glow">#66DC2626</color>
+    <color name="fn_delete_bg">#FF221214</color>
+    <color name="fn_delete_text">#FFFCA5A5</color>
+    <!-- Acero de la Espada Demon-Slayer (Números Básicos) -->
+    <color name="btn_num_bg">#FF181A22</color>
+    <color name="btn_num_bg_pressed">#FF232734</color>
+    <color name="btn_num_text">#FFF1F5F9</color>
+    <!-- Operadores Aritméticos Básicos (+, -, *, /, %) -->
+    <color name="btn_op_bg">#FF201A0F</color>
+    <color name="btn_op_border">#59D4AF37</color>
+    <!-- Funciones Científicas Modo Horizontal (sin, cos, tan, log...) -->
+    <color name="btn_sci_bg">#FF11131A</color>
+    <color name="btn_sci_text">#FF94A3B8</color>
+    <color name="btn_sci_border">#FF202431</color>
+    <!-- Textos de Pantalla -->
+    <color name="screen_history">#CCFFD4AF</color>
+    <color name="screen_result">#FFFFFFFF</color>
+
+
+</resources>
