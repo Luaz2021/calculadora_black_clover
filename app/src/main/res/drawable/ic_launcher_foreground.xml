@@ -4,7 +4,29 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M36,36h36v36h-36z" />
+    <!-- Trébol de 4 hojas negro (Black Clover) centrado en la zona segura -->
+    <group
+        android:translateX="54"
+        android:translateY="52">
+        <!-- Hoja superior -->
+        <path
+            android:fillColor="#111111"
+            android:pathData="M0,-2 C-9,-10 -12,-24 0,-26 C12,-24 9,-10 0,-2 Z" />
+        <!-- Hoja inferior -->
+        <path
+            android:fillColor="#111111"
+            android:pathData="M0,2 C-9,10 -12,24 0,26 C12,24 9,10 0,2 Z" />
+        <!-- Hoja izquierda -->
+        <path
+            android:fillColor="#111111"
+            android:pathData="M-2,0 C-10,-9 -24,-12 -26,0 C-24,12 -10,9 -2,0 Z" />
+        <!-- Hoja derecha -->
+        <path
+            android:fillColor="#111111"
+            android:pathData="M2,0 C10,-9 24,-12 26,0 C24,12 10,9 2,0 Z" />
+        <!-- Tallo -->
+        <path
+            android:fillColor="#111111"
+            android:pathData="M-1.5,14 L1.5,14 L3,30 L-1,30 Z" />
+    </group>
 </vector>
