@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta Black Clover (Grimorio / Toros Negros / Antimagia) -->
+    <color name="calc_bg">#FF0B0C10</color>
+    <color name="calc_display_op">#CCFFD4AF</color>
+    <color name="calc_display_res">#FFFFFFFF</color>
+    <color name="calc_btn_num_bg">#FF181A22</color>
+    <color name="calc_btn_num_text">#FFF1F5F9</color>
+    <color name="calc_btn_op_bg">#FF201A0F</color>
+    <color name="calc_btn_op_text">#FFD4AF37</color>
+    <color name="calc_btn_func_bg">#FF221214</color>
+    <color name="calc_btn_func_text">#FFFCA5A5</color>
+    <color name="calc_btn_eq_bg">#FFDC2626</color>
+    <color name="calc_btn_eq_text">#FFFFFFFF</color>
+    <color name="calc_btn_sci_bg">#FF11131A</color>
+    <color name="calc_btn_sci_text">#FF94A3B8</color>
+</resources>
