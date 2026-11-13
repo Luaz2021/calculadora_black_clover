@@ -1,42 +1,86 @@
-# Calculadora Científica — Black Clover Edition ♣️
+# ♣️ Calculadora Científica — Black Clover Edition
 
-Aplicación Android de calculadora científica desarrollada en **Kotlin**, con soporte para orientación vertical y horizontal, tema visual inspirado en **Black Clover** y pruebas instrumentadas.
+![Kotlin](https://img.shields.io/badge/Kotlin-Android-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Gradle](https://img.shields.io/badge/Build-Gradle%20KTS-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+![Theme](https://img.shields.io/badge/Theme-Black%20Clover-111111?style=for-the-badge)
 
-## ✨ Características
+Aplicación Android de **calculadora científica** desarrollada en **Kotlin**, con diseño adaptativo para orientación **vertical** y **horizontal**, paleta inspirada en el grimorio de **Black Clover** (negro carbón, dorado y acentos oscuros/claros) y **pruebas instrumentadas** con Espresso.
 
-- **Modo vertical (Portrait):** operaciones aritméticas básicas (`+`, `-`, `×`, `÷`), porcentaje, cambio de signo, paréntesis y borrado.
-- **Modo horizontal (Landscape):** panel científico completo con funciones trigonométricas (`sin`, `cos`, `tan`), logaritmos (`log`, `ln`), potencias, raíz cuadrada y constantes matemáticas.
-- **Persistencia de estado:** conserva la expresión y el resultado actual al rotar la pantalla (`onSaveInstanceState`).
-- **Paleta Black Clover:** colores personalizados definidos en `res/values/colors.xml` y aplicados de forma uniforme en ambos layouts.
+---
 
-## 🛠️ Stack Técnico
+## ✨ Qué trae esta calculadora
+
+- 📱 **Modo Vertical (`layout/`):** calculadora clásica rápida y limpia con operaciones básicas (`+`, `-`, `×`, `÷`), porcentaje (`%`), cambio de signo (`+/-`), borrado (`DEL`) y reinicio (`C`).
+- 🔬 **Modo Horizontal (`layout-land/`):** al girar el dispositivo se despliega el panel científico completo (`sin`, `cos`, `tan`, `ln`, `log`, `√`, `x²`, `xʸ`, `π`, `e`, `!`, `1/x`, `|x|`, paréntesis).
+- 🌗 **Modo Claro / Oscuro:** botón superior para alternar el tema dinámicamente con `AppCompatDelegate`.
+- 🔄 **Persistencia al rotar:** conserva la expresión actual y el último resultado mediante `onSaveInstanceState`.
+- 🎨 **Identidad Black Clover:** colores centralizados en `res/values/colors.xml` aplicados de forma uniforme en ambos layouts.
+- 🧪 **Tests Instrumentados:** validación automática de la interfaz y cálculos en ambos modos (`portrait` y `landscape`).
+
+---
+
+## 🛠️ Stack y Requisitos
 
 - **Lenguaje:** Kotlin
-- **Interfaz:** XML (`LinearLayout` + `TableLayout`) con layouts diferenciados (`layout/` y `layout-land/`)
-- **Testing:** Pruebas instrumentadas con Espresso (`ExampleInstrumentedTest.kt`) para validar la UI y el cálculo en ambos modos de pantalla.
+- **Interfaz:** XML (`LinearLayout` + `TableLayout` con pesos proporcionales y soporte `EdgeToEdge`)
+- **Build System:** Gradle (Kotlin DSL `.kts`) + Version Catalog (`gradle/libs.versions.toml`)
+- **Testing:** JUnit + Espresso (`ExampleInstrumentedTest.kt`)
+- **IDE recomendado:** Android Studio (Ladybug / Meerkat o superior) con JDK 17+
 
-## 📂 Estructura Principal
+---
 
-```text
-app/src/
-├── main/
-│   ├── java/com/example/calculadoracientifica/
-│   │   └── MainActivity.kt
-│   └── res/
-│       ├── layout/activity_main.xml
-│       ├── layout-land/activity_main.xml
-│       └── values/colors.xml
-└── androidTest/java/com/example/calculadoracientifica/
-    └── ExampleInstrumentedTest.kt
-```
+## 🚀 Cómo clonar y ejecutar
 
-## 🚀 Compilación y Pruebas
+### 1. Clonar el repositorio
 
 ```bash
-./gradlew assembleDebug
-./gradlew assembleDebugAndroidTest
+git clone https://github.com/Luaz2021/calculadora_black_clover.git
+cd calculadora_black_clover
 ```
 
-## 🔗 Repositorio
+### 2. Abrir en Android Studio
 
-- [Luaz2021/calculadora_black_clover](https://github.com/Luaz2021/calculadora_black_clover)
+1. Abre **Android Studio** → **Open** y selecciona la carpeta `calculadora_black_clover`.
+2. Espera a que **Gradle Sync** descargue las dependencias.
+3. Selecciona un emulador (por ejemplo *Medium Phone*) o dispositivo físico con depuración USB y pulsa **Run** (`Shift + F10`).
+
+### 3. Compilar y probar por terminal
+
+```bash
+# Compilar APK de debug
+./gradlew assembleDebug
+
+# Compilar APK de pruebas instrumentadas
+./gradlew assembleDebugAndroidTest
+
+# Ejecutar tests instrumentados (requiere emulador o dispositivo conectado)
+./gradlew connectedDebugAndroidTest
+```
+
+---
+
+## 📂 Estructura del Proyecto
+
+```text
+calculadora_black_clover/
+├── app/src/
+│   ├── main/
+│   │   ├── java/com/example/calculadoracientifica/
+│   │   │   └── MainActivity.kt              # Lógica, parser, tema y persistencia
+│   │   └── res/
+│   │       ├── layout/activity_main.xml     # Interfaz vertical (básica)
+│   │       ├── layout-land/activity_main.xml# Interfaz horizontal (científica)
+│   │       └── values/colors.xml            # Paleta Black Clover
+│   └── androidTest/java/com/example/calculadoracientifica/
+│       └── ExampleInstrumentedTest.kt       # Tests Espresso (vertical y horizontal)
+├── build.gradle.kts
+├── gradle/libs.versions.toml
+└── README.md
+```
+
+---
+
+## 👨‍💻 Autor
+
+- **Alexander Martínez** — [Luaz2021](https://github.com/Luaz2021)
